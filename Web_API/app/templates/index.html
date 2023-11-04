@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASL Sign Prediction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  {% include 'header.html' %}
+
+
+  <main>
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+
+          <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="32" height="40" fill="currentColor"
+            class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" />
+            <path
+              d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" />
+          </svg>
+
+          <span class="fs-4">American Sign Language Prediction</span>
+        </a>
+      </header>
+
+
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+
+            <div style="position: relative; width: 100%; height: 100%;">
+              <img class="video_prdct" src="{{ url_for('video_feed') }}" style="width: 100%; height: 100%;" />
+              <div style="position: absolute; top: 10px; left: 10px; color: black; font-size: 24px; font-weight: bold;">
+                {{ predicted_letter }}</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+
+            <img src="{{ url_for('static', filename='imgs/signs.png') }}" class="d-block mx-lg-auto img-fluid"
+              alt="Sign language Poster" width="700" height="500" loading="lazy">
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div style="margin-top: 24px ;" class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Note:</h1>
+          <p class="col-md-8 fs-4">"Gesture Speak: Real-time ASL Recognition"! Our powerful platform predicts real-time
+            hand gestures using an ML model. It recognizes A to Z ASL gestures but may have occasional errors. Just
+            reload the page if it gets stuck. Your feedback helps us improve sign language communication. Thank you!
+          </p>
+          
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+  {% include 'footer.html' %}
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

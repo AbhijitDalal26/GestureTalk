@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    
+        <div class="container py-4">
+
+            <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                <div class="col-lg-6 px-0">
+                    <h1 class="display-4 fst-italic">Gestures Talk: Voice Through Gestures</h1>
+                    <p class="lead my-3">Welcome to Gesture Talk, a revolutionary project that harnesses the power
+                        of hand gestures to enhance communication and connectivity. Our mission is to break down
+                        barriers and provide an inclusive platform for individuals to express themselves effortlessly.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark rounded-3">
+                        <h2>What We Offer</h2>
+                        <p><strong>1. Gesture Prediction:</strong> Gesture Talk allows users to input letters from A to
+                            Z using hand
+                            gestures. It predicts letters, words, and even small sentences in real-time, creating a
+                            natural communication experience.</p>
+
+                        <p><strong>2. Custom Gesture Training:</strong> We give users the power to train our system to
+                            recognize
+                            custom hand gestures. You can define unique gestures for specific actions, words, or phrases
+                            based on your needs.</p>
+
+                        <p><strong>3. Assistive Technology:</strong> Gesture Talk is designed to be a valuable assistive
+                            tool,
+                            especially in healthcare and medical scenarios. It can provide a means of communication for
+                            patients in environments where verbal communication may be challenging.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>Who Can Benefit from Gesture Talk?</h2>
+                        <h5>1. Communication for the Differently Abled:</h5>
+                        <p> - People with speech impairments can use custom gestures to communicate more effectively.
+                        </p>
+                        <h5>2. Healthcare and Medical Scenarios:</h5>
+                        <p>- Healthcare professionals can also use custom gestures to streamline processes and access
+                            information quickly.</p>
+                        <h5>3. Sign Language Interpretation:</h5>
+                        <p>- Gesture Talk can assist in bridging the gap between sign language users and non-sign
+                            language users by providing a common communication platform.</p>
+                        <h5>4. Custom sign language translation:</h5>
+                        <p>- Imagine a family that has a member with a rare medical condition that causes difficulties
+                            in vocal communication. The individual has a set of gestures they naturally use to
+                            communicate with their loved ones. These gestures convey specific needs, emotions, or
+                            phrases that are not part of the standard sign language. Can be train and use for comm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
+
+    {% include 'footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

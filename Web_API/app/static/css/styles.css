@@ -1,0 +1,25 @@
+#home-bac {
+  background-color: f8f0e5;
+}
+
+/* Change the background color of Home nav bar */
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #000;
+}
+
+.nav-link {
+  --bs-nav-link-color: black;
+}
+
+.processor svg {
+  /* Add padding to the SVG to create space around the icon */
+  margin-right: 9px;
+}
+
+.p-5 mb-4 bg-body-tertiary rounded-3 {
+  margin-top: 24px;
+}
+
+
